@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+    h2{
+    background-color:tomato;
+    max-width:750px;
+        margin:auto;
+        padding:15px;
+    text-size:30px;
+    top:100px;
+    text-align:center;}
+        .container{
+        max-width:750px;
+        margin:20px auto 0 auto;
+        padding:15px;
+        background-color:antiquewhite;}
+        .form-row{
+        padding:10px 0;
+        display:flex;}
+        .form-row label{
+        padding:10px;
+        flex:1;}
+        .form-row input{
+        padding:10px;
+        flex:2;}
+        .calls-out-container{
+        max-width:1400px;
+        margin:40px auto 0 auto;
+        /* display:flex;
+        align-items:/*flex-end;*/ /* center; */ /* flex-start */stretch;
+        justify-content:space-between; */}
+        .call-out{
+        padding:20px;
+        margin-bottom:20px;
+         flex:1;
+         /* margin:10px; */
+         flex-basis:30%;}
+        .call-out:nth-child(1){background-color:seagreen;}
+        .call-out:nth-child(2){background-color:cadetblue;}
+        .call-out:nth-child(3){background-color:red;}
+        @media (min-width:800px){
+        .calls-out-container{
+     justify-content:space-between;
+     display:flex;}}
+    </style>
+</head>
+<body>
+<h2>Flex Box Properties:</h2>
+<div class="container">
+<form action="">
+    <div class="form-row">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname">
+    </div>
+    <div class="form-row">
+        <label for="mname">Middle Name:</label>
+        <input type="text" id="mname">
+    </div>
+    <div class="form-row">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname">
+    </div>
+</div>
+</form>
+<div class="calls-out-container">
+    <div class="call-out">
+        <h2>1st Paragraph</h2>
+        <p>The solar system has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. There are five officially recognized dwarf planets in our solar system: Ceres, Pluto, Haumea, Makemake, and Eris. NASA says after dark, throughout the month of January, you'll be able to see Venus, Saturn Jupiter and Mars. Venus and Saturn will appear in the southwest of the sky, Jupiter will appear overhead and Mars will rise in the east.
+        </p>
+    </div>
+    <div class="call-out">
+        <h2>2nd Paragraph</h2>
+        <p>The solar system has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. There are five officially recognized dwarf planets in our solar system: Ceres, Pluto, Haumea, Makemake, and Eris.
+        </p>
+    </div>
+    <div class="call-out">
+        <h2>3rd Paragraph</h2>
+        <p>The solar system has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. There are five officially recognized dwarf planets in our solar system: Ceres, Pluto, Haumea, Makemake, and Eris.
+        </p>
+    </div>
+</div>
+</body>
+</html>

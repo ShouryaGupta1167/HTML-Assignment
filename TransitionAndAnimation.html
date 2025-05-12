@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Transition and Animation</title>
+  <style>
+    body{
+    background-color: lightslategray ;}
+    .circle{
+    background-color: antiquewhite ;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    position:relative;
+    margin:auto;
+    top:150px;
+    transition-property:background,border-radius,transform /* all */;
+    transition-duration:1s,2s;
+    /* transition-delay:2s,4s; */
+    transition-timing-function:/*linear*/ /* ease-out*/ ease-in;
+    }
+     .circle:hover{
+    background-color:lightgreen;
+    border-radius:0px;
+    transform:rotateY(180deg);
+    }
+
+  </style>
+</head>
+<body>
+<div class="circle"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<div class="dropdown">
+    <div class="dropbtn"><img src="assets/51b3808ae01037d3b2519b24860dbeb6.png"style="width=30px;height:30px;"></div>
+    <div class="dropdown-content">
+        <a href="CSSAssignment.html">Home</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+/* Styling drop down menu */
+.dropbtn {
+background-color:gray;
+color: white;
+padding: 10px;
+font-size: 16px;
+border: none;
+position:sticky;
+display:inline-block;
+}
+.dropdown{
+position:sticky;
+display:inline-block;
+}
+.dropdown-content {
+display: none;
+position: sticky;
+background-color:beige;
+min-width: 100px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display:table;
+width:70%;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}

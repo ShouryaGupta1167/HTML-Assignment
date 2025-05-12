@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript Arrays Method</title>
+  <script type="text/JavaScript">
+  /* array.concat(); */
+    var alpha=["a","b","c"];
+    var numeric=[1,2,3];
+    var alphanumeric=alpha.concat(numeric);
+    document.write("alphanumeric:"+alphanumeric+"<br/>");
+
+   /* array.join() */
+   var arr=new Array("first","second","third");
+   var str=arr.join();
+   document.write("str:"+ str);
+   var str=arr.join("+ ");
+   document.write("<br/> str:"+ str+"<br/>");
+
+   /* array.splice() */
+   var ab=["mango","orange","banana","sugar","tea"];
+   var removed=ab.splice(2,1,"water");
+   document.write("after adding 1:"+ab+"<br/>");
+      document.write("removed is:"+removed+"<br/>");
+         removed=ab.splice(3,1);
+   document.write("after adding 0:"+ab+"<br/>");
+      document.write("removed is:"+removed+"<br/>");
+
+      /* array.toString() */
+      var abc=new Array("orange","banana","mango");
+      var str=abc.toString();
+      document.write("Returned string is:"+str+"<br/>");
+
+      /* array.slice() */
+      var abcd=["orange","banana","mango","kiwi"];
+      document.write("abcd.slice(1,2):"+abcd.slice(1,2)+"<br/>");
+        document.write("abcd.slice(1,3):"+abcd.slice(1,3)+"<br/>");
+
+     /*   array.push() */
+     var arr1=[1,2,3,4,5];
+     var l=arr1.push(10);
+     document.write("<br/> new number is:"+arr1);
+
+  /* array.pop() */
+  var number=[1,2,3,4,5];
+  var l2=number.pop();
+  document.write("<br/ pop number is:"+l2);
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

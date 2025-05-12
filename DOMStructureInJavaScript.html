@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html DOM structure</title>
+  <script type="text/JavaScript">
+  /* Legacy DOM Structure */
+   /* function my-fun(){
+    var ret=document.title;
+    alter("Document.title:"+ret);
+    var ret1=document.URL;
+    alter("Document.URL:"+ret1);
+    var ret2=document.forms[0];
+    alter("Document first form:"+ret2);
+    var ret3=document.forms[0].elements[1];
+    alter("Second element:"+ret3);
+    } */
+
+    /* W3C DOM structure */
+    /* function my-fun(){
+    var ret=document.getElementsByTagName("title");
+    alert("DocumentTitle:"+ret[0].text);
+    var ret=document.getElementsById("heading");
+    alert(ret.innerHTML);
+    } */
+
+/* IE4 DOM Structure */
+     function my-fun(){
+    var ret=document.all["heading];
+    alert("DocumentHeading:"+ret.innerHTML);
+    var ret=document.all("text");
+    alert("First Paragraph:"+ret.innerHTML);
+    }
+
+  </script>
+</head>
+<body>
+ <!-- <h1 id ="title"> This is the main title!</h1>
+<p>Click the following to see the result</p>
+<form name="first-form">
+  <input type="button" value="click me" onclick="my-fun();">
+  <input type="button" value="cancel">
+</form> -->
+
+ <!-- <h1 id ="heading"> W3C DOM!</h1>
+ <p>Click the following to see the result</p>
+ <form id="form1" name="first-form">
+     <input type="button" value="click me" onclick="my-fun();">
+     <input type="button" value="cancel">
+ </form> -->
+
+ <h1 id ="heading"> This is main!</h1>
+ <p id="text">Click the following to see the result</p>
+ <form id="form1" name="first-form">
+     <input type="button" value="click me" onclick="my-fun();">
+     <input type="button" value="cancel">
+ </form>
+
+</body>
+</html>

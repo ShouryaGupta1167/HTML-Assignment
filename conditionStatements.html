@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Condition Statements </title>
+  <script type="text/JavaScript">
+  /* if statement */
+    var a=17;
+    if(a>18){
+    document.write("<br><b>You are eligible for driving!</b></br>")}
+      else{
+    document.write("<br><b>You are not eligible for driving!</b></br>")}
+
+  /* else if statement */
+    var book="maths";
+    if(book=="english"){
+    document.write("<br><b> it's a english book</b></br>")}
+    else if(book=="maths"){
+    document.write("<br><b> it's a maths book</b></br>")}
+    else if(book=="hindi"){
+    document.write("<br><b> it's a hindi book</b></br>")}
+   else{
+    document.write("<br><b>book not found</b></br>")}
+
+    /* switch case statement */
+    var grade='C';
+    switch(grade){
+    case 'A':document.write("<br>Good Job</br>");
+    break;
+    case 'B':document.write("<br>pretty good Job</br>");
+    break;
+    case 'C':document.write("<br>can do better</br>");
+    break;
+    case 'D':document.write("<br>need improvement</br>");
+    break;
+    case 'E':document.write("<br>fail</br>");
+    break;
+    default:document.write("<br>unknown grade</br>");
+    }
+
+    /* ternary operator */
+    var marks=prompt('enter marks');
+    var result=(marks>=40? 'pass':'fail');
+    document.write("You ${result} the exam");
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

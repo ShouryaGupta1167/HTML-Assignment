@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>functions in javascript</title>
+  <script type="text/JavaScript">
+    /* normal function */
+    /* function sayHello(){
+    document.write("Hello World!");
+    } */
+
+    /* function with parameter */
+     /* function sayHello(name,age){
+    document.write("I am "+name+" my age is "+age);
+    } */
+
+    /* function to return */
+   /* function concanate(first,last){
+    var full=first+" "+last;
+    return full;}
+    function secondfn(){
+    var result=concanate('Sam','Bahadur');
+    document.write(result);} */
+
+    /* nested function */
+    /* function hypotenuse(a,b){
+    function square(x){
+    return x*x;
+    }
+   return Math.sqrt(square(a)+square(b));
+   }
+   function secondfn(){
+   var result;
+   result=hypotenuse(1,2);
+   document.write(result);
+   } */
+
+   /* function lateral */
+   var func= function(a,b){
+   return a*b;
+   };
+   function secondfn(){
+   var result;
+   result=func(2,2);
+   document.write(result);
+   }
+
+</script>
+</head>
+<body>
+<p>click on the below button to call the function!</p>
+ <!-- <form >
+  <input type="button" onclick="sayHello()" value="click">
+</form> -->
+
+<!-- <form >
+<input type="button" onclick="sayHello('Shourya',18)" value="click">
+</form> -->
+
+<!-- <form >
+  <input type="button" onclick="secondfn()" value="click">
+</form> -->
+
+<form >
+<input type="button" onclick="secondfn()" value="click">
+</form>
+</body>
+</html>

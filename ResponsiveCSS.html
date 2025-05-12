@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <style>
+    .main-head{
+    background-color:tomato;
+    max-width:390px;
+    padding:10px;
+    font-size:30px;}
+
+    ul{
+    list-style-image:url("assets/right-arrow.png");
+    background-color:pink;
+    padding:10px;}
+
+    ul li{
+    background-color:beige;
+     padding:3px;
+    margin-left:25px;}
+
+    a.button:link,a.button:visited{
+    background-color:white;
+    color:black;
+    border:2px solid green;
+    padding:10px 5px;
+    text-decoration:none;
+    display:inline-block;}
+
+    a.button:active{
+    background-color:gray;
+    color:lightgray;
+    border:2px solid darkgreen;
+    padding:10px 5px;
+    text-decoration:underline;
+    display:inline-block;}
+
+    div.cards{
+    width:75%;
+    background-color:antiquewhite;
+    box-shadow:0 4px 8px 0 black,0 4px 8px 0 black;
+    margin-bottom:40px;
+    border-radius:10px 10px 10px 10px;
+    }
+
+    div.caption{
+    text-align:center;
+    padding:10px 20px;
+    }
+
+    img.thumb{
+    border:1px solid lightblue;
+    border-radius:5px;
+    padding:5px;
+    width:150px;}
+
+    img.thumb:hover{
+    box-shadow:5px 10px 80px 8px lightblue;}
+
+    .breakpoint{
+    padding:20px;
+    color:cadetblue;
+    }
+
+@media only screen and(max-width:600px){
+ .breakpoint{background-color:green}}
+
+@media only screen and(min-width:600px){
+.breakpoint{background-color:gold;}}
+
+@media only screen and(min-width:780px){
+.breakpoint{background-color:blue;}}
+
+@media only screen and(min-width:996px){
+.breakpoint{background-color:pink;}}
+
+@media only screen and(min-width:1200px){
+.breakpoint{background-color:orange;}}
+  </style>
+
+
+
+</head>
+<body>
+<h2 class="main-head">Responsive webpage using css</h2>
+<p>The list-style-image property specifies an image as the list item marker.</p>
+<h3> parts of plant:</h3>
+<ul>
+  <li>Roots</li>
+  <li>Stem</li>
+  <li>Leaf</li>
+  <li>Flowers</li>
+  <li>Bark</li>
+
+</ul>
+<a class="button" href="TransitionAndAnimation.html"  target="_blank" >this is link to transition and animation!</a>
+<h2>Polaroid Images</h2>
+<div class="cards">
+  <img src="assets/Cherry-Blossom-Wallpaper-HD-Free-download.jpg" alt="Cherry Blossom" style="width:100%">
+  <div class="caption">
+    <p> Cherry Blossom </p>
+  </div>
+</div>
+<a href="TransitionAndAnimation.html"  target="_blank" >
+<img src="assets/vincent-guth-62V7ntlKgL8-unsplash.jpg" class="thumb" alt="Moonlight"
+     style="width:150px"></a>
+
+<h2> Mediaquery Breakpoints</h2>
+<p class="breakpoint">Breakpoint will help in creating a very responsive and adaptable
+webpage according to different screen sizes!. </p>
+</body>
+</html>

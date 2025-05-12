@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript DOM Selectors</title>
+   <!-- <script>
+    alert("From Head:"+document.head);
+  </script> -->
+
+
+
+</head>
+<body>
+<!-- <script>
+    alert("From Head:"+document.body);
+  </script> -->
+
+<!-- get element by id...
+<p id="mark">This is first paragraph!</p>
+<p>This is second paragraph!</p>
+<script>
+    var match=document.getElementById("mark");
+    match.style.background="magenta";
+</script> -->
+
+<!-- get element by tag name
+<p>This is paragraph of text!</p>
+<div class="text">This is another paragraph of text!</div>
+<p>This is third paragraph of text!</p>
+<script>
+    var matches=document.getElementsByTagName("p");
+    document.write("Numbers of selected Elements:"+matches.length);
+    for(var elem in matches){
+    matches[elem].style.background="cyan";
+    }
+    </script> -->
+
+<ul>
+    <li>Bread</li>
+    <li class="tick">Coffee</li>
+    <li>Pineapple cake</li>
+</ul>
+<script>
+    var matches=document.querySelectorAll("ul li");
+    document.write("Number of Selected elements:"+matches.length+"<hr>");
+     for(var elem in matches){
+     document.write(elem.innerHTML+"<br>");
+     }
+     matches=document.querySelectorAll("ul li.tick");
+     matches[0].style.textDecoration="line-through";
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+<style>
+    /* style the body */
+    body{
+    background-color:antiquewhite;
+    margin:0;
+    font-family:arial;}
+
+    /* header styling */
+    .header{
+    background-color:seagreen;
+    padding:40px;
+    text-align:center;
+    color:ghostwhite;
+    }
+
+/*styling navbar*/
+.navbar{
+background-color:lightgray;
+display:flex;
+position:sticky;
+top:0;
+
+}
+.navbar a{
+color:black;
+padding:4px;
+text-decoration:none;
+}
+.navbar a:hover{
+color:white;
+background-color:black;
+}
+
+.row{
+display:flex;
+ flex-wrap: none;
+}
+.sidebar{
+flex:30%;
+background-color:azure;
+padding:20px;
+}
+.main-content{
+flex:70%;
+background-color:antiquewhite;
+padding:20px;
+}
+
+ .title-img{
+ background-color:tan;
+ width:98%;
+ max-width:100%;
+ padding:10px;
+
+ }
+ .footer{
+ padding:10px
+ color:black;
+ background-color:cadetblue;
+ text-align:center;
+ width:100%;
+ height:50px;
+}
+ul{
+list-style-image:url("assets/right-arrow.png");
+}
+@media(max-width:700px){
+.row,.navbar{flex-wrap: wrap;
+}
+}
+
+</style>
+</head>
+<body>
+<div style="background-color:midnightblue;padding:2px;color:ghostwhite; text-align:center;">
+    <h4>This is CSS Assignment using css properties along with responsive webpage!</h4>
+</div>
+
+    <div class="header">
+        <h1>welcome to My Webpage!</h1>
+        <p>With an <strong>Adjustable and Reactive</strong> layout!</p>
+    </div>
+
+<div class="navbar">
+    <a href="CSSAssignment">Home</a>
+    <a href="Contact">Contact</a>
+</div>
+
+<div class="row">
+<div class="sidebar">
+    <h2>About Internship Studio</h2>
+    <h4>Photo of Internship Studio</h4>
+    <img src="assets/pexels-hillaryfox-1595385.jpg"class="title-img" style="height:200px;">
+    <p>The solar system has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. There are
+        five officially recognized dwarf planets in our solar system: Ceres, Pluto, Haumea, Makemake, and Eris. NASA says
+        after dark, throughout the month of January, you'll be able to see Venus, Saturn Jupiter and Mars. Venus and Saturn
+        will appear in the southwest of the sky, Jupiter will appear overhead and Mars will rise in the east.
+    </p>
+    <h3>Web Design Course</h3>
+    <p>The solar system has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. There are
+        five officially recognized dwarf planets in our solar system: Ceres, Pluto, Haumea, Makemake, and Eris.
+    </p>
+    <img src="assets/web-design-technology-browsing-programming-concept.jpg"
+         class="img" style="height:55px;width:150px;margin-left:25%;"><br><br>
+</div>
+<div class="main-content">
+<h2>WEBSITE DESIGN</h2>
+<h5>starting from 20th Jan 2025</h5>
+<img src="assets/web-design-technology-browsing-programming-concept.jpg"
+     class="title-img" style="height:200px">
+<p>
+    Internship Studio is a platform developed to help students build their profiles by providing them the right exposure
+    to develop the required skills in the respective domain. Log in to learning and devour upon the technical and organizational
+    aspects of the corporate. Internship Studio provides an industry exposure within your domestic vicinity. Work & learn
+    from the professionals and apply the gained skills towards the construction of a Learning-based ecosystem.
+    To further this cause Internship Studio endeavors for :
+    * Encouraging students to work on projects & learn from the professionals.
+    * Infusing a learning spirit through the best of the best mentorship.
+    * Filling the gap between bookish knowledge and practical knowledge by
+    providing training + internship
+</p><br>
+    <h2>Who is this internship is for?</h2>
+<h5>Your internship will be begun on the 17th of Jan </h5>
+<ul>
+    <li>Anyone who wants to learn creating websites.. </li>
+    <li>Anyone who want to develop step by step understand of HTML,CSS and Javascript
+    ,and about making websites.</li>
+    <li>Check the detail for your live introductory meeting link in your live introductory
+    curriculum session.</li>
+</ul>
+</div>
+</div>
+
+
+<div class="footer">
+    <h2 class="h2" style="padding:10px;">Internship Studio</h2>
+</div>
+
+</body>
+</html>
